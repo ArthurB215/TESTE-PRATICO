@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Placeholder de um simples menu aonde teria configurações básica do site e o sobre-->
+<nav class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#">Configurações</a></li>
+        <li><a href="#">Sobre</a></li>
+    </ul>
+</nav>
+
+<div class="overlay" id="overlay"></div>
+
+<header class="header">
+    <h1>Lista de Usuários</h1>
+
+    <button class="menubtn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div id="controles">
+
+    <fieldset>
+        <legend>Informações extras</legend>
+
+        <div class="extras-layout">
+            <div>
+                <label><input type="checkbox" value="name"> Nome</label>
+                <label><input type="checkbox" value="email"> E-mail</label>
+                <label><input type="checkbox" value="city"> Cidade</label>
+                <label><input type="checkbox" value="username"> Nome de usuário</label>
+                <label><input type="checkbox" value="phone"> Telefone</label>
+                <label><input type="checkbox" value="website"> Website</label>
+            </div>
+
+            <div class="layout-right">
+
+                <div>
+                    <button type="button" class="toggle" data-target="address">
+                        <span class="arrow">▶</span> Endereço
+                    </button>
+
+                    <div class="group" id="address">
+                        <label><input type="checkbox" value="street"> Rua</label>
+                        <label><input type="checkbox" value="suite"> Suite</label>
+                        <label><input type="checkbox" value="zipcode"> CEP</label>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="toggle" data-target="company">
+                        <span class="arrow">▶</span> Empresa
+                    </button>
+
+                    <div class="group" id="company">
+                        <label><input type="checkbox" value="companyName"> Nome</label>
+                        <label><input type="checkbox" value="catchPhrase"> Slogan</label>
+                        <label><input type="checkbox" value="bs"> BS</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </fieldset>
+
+    <button id="loadUsers">Mostrar usuários</button>
+</div>
+   
+<div class="table-range">
+    <table>
+        <thead id="tableHead"></thead>
+        <tbody id="users"></tbody>
+    </table>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
