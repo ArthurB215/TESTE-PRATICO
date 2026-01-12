@@ -6,7 +6,7 @@ Consiste em um **simples projeto webapp** para teste de aprendizado usando **HTM
 
 ## Principal funcionalidade
 
-Sua principal função é buscar em uma **API pública em formato json**** e com as informações obtidas renderizar em formato de tabela as informações tornando assim mais organizada e apresentável para o usuário.
+Sua principal função é buscar em uma **API pública em formato json** e com as informações obtidas renderizar em formato de tabela as informações tornando assim mais organizada e apresentável para o usuário.
 
 ---
 
@@ -31,4 +31,5 @@ Sua principal função é buscar em uma **API pública em formato json**** e com
 ## OBSERVAÇÕES
 
 - O projeto utiliza uma **API pública** para buscar dados
+
 - Não há necessidade de um servidor ou a necessidade de alguma dependência.
